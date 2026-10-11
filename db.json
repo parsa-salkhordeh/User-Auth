@@ -4,7 +4,7 @@
       "id": 1,
       "firstName": "parsa",
       "email": "parsassa@gmail.com",
-      "gender": "male",
+      "gender": "مرد",
       "password": "parsa1234",
       "role": "admin"
     },
@@ -12,7 +12,7 @@
       "id": 2,
       "firstName": "sasan",
       "email": "sasan19@gmail.com",
-      "gender": "male",
+      "gender": "مرد",
       "password": "sasan5678",
       "role": "user"
     }

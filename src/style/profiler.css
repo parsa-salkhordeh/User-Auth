@@ -3,6 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+header{
+ display: flex;
+ margin: 0 auto;
+ justify-content: space-between;
+ max-width: 1000px;
+ margin-bottom: 3rem;
+ margin-top: 10px;
+ background-color: rgb(58, 57, 57);
+ padding: 8px;
+ border-radius: 8px;
+ color: white;
+}
 
 
 .frontend-section {

@@ -10,13 +10,14 @@ loginForm.addEventListener('submit' , async (e)=>{
     try {
         const res= await fetch(`http://localhost:3000/users?email=${email}&password=${password}`);
         const users=await res.json()
-
+        
         if(users.length > 0){
 
             const user = users[0];
             // یک شرط دیگه ساختم برای اینکه مقایسه کنه پسورد وارد شده با پسورد دیتابیس
             if(user.password == password){
                 Toastify({ text: "موفق" }).showToast();
+                localStorage.setItem('user' , JSON.stringify(user))
                 window.location.href="profiler.html"
             }else{
                  Toastify({ text: "ایمیل یا پسورد صحیح نیست!" }).showToast();
