@@ -6,16 +6,21 @@
     <title>profile</title>
     <link rel="stylesheet" href="style/profiler.css">
     <script src="javascript/profiler.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="../node_modules/toastify-js/src/toastify.css"
+    />
   </head>
   <body>
     <main>
       <!-- change password -->
        <section class="changePasswordSection">
+        <button style="cursor: pointer;" id="deletPagePassword">❌</button>
         <h2>تغییر پسورد</h2>
-        <form action="">
+        <form action="" id="changePasswordForm">
           <input type="password" id="oldPassword" required placeholder="رمز فعلی">
           <input type="password"  id="newPassword" required placeholder="رمز جدید">
-          <input type="password" id="currentNewPassword" required placeholder="تکرار رمز جدید">
+          <input type="password" id="confirmPassword" required placeholder="تکرار رمز جدید">
           <button id="confirm" type="submit">تغییر رمز عبور</button>
         </form>
        </section>
@@ -63,5 +68,10 @@
       </div>
     </section>
     </main>
+
+
+    <!-- Toastify -->
+    <script src="../node_modules/toastify-js/src/toastify.js"></script>
+    <script src="./javascript/login.js"></script>
   </body>
 </html>
