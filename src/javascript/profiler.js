@@ -1,3 +1,5 @@
+const deletButton=document.getElementById("deletBtn");
+
 window.addEventListener('load' , function(){
     // یوزری که لاگین کردرو با getItem میگیریم
     // یک رشته جیسونه پس از Jsonpars
@@ -14,4 +16,11 @@ window.addEventListener('load' , function(){
    firstname.textContent=`نام: ${user.firstName}`
    gender.textContent=`جنسیت: ${user.gender}`
    
+});
+
+// خروج از حساب کاربری
+deletButton.addEventListener('click' , function(){
+  localStorage.removeItem('user');
+  window.location.href='/src/login.html'
+
 });
