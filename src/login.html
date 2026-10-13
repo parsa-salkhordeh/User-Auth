@@ -16,11 +16,6 @@
   <body>
     <form id="loginForm" action="" method="">
       <div class="form-group">
-        <label for="firstname">نام</label>
-        <input type="text" id="firstname"/>
-      </div>
-
-      <div class="form-group">
         <label for="firstname">ایمیل</label>
         <input type="email" id="email" required />
       </div>
@@ -30,21 +25,11 @@
         <input type="password" id="password" required />
       </div>
 
-      <div class="gender">
-        <p>Gender:</p>
-
-        <input type="radio" id="male" name="gender" />
-        <label for="male">مرد</label>
-
-        <input type="radio" id="female" name="gender" />
-        <label for="female">زن</label>
-      </div>
 
       <button type="submit" class="loginBtn">ورود</button>
     </form>
 
     <!-- Toastify -->
     <script src="../node_modules/toastify-js/src/toastify.js"></script>
-    <script src="./javascript/login.js"></script>
   </body>
 </html>

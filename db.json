@@ -1,19 +1,19 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "firstName": "parsa",
       "email": "parsassa@gmail.com",
       "gender": "مرد",
-      "password": "parsa1234",
-      "role": "admin"
+      "password": "p1234567",
+      "role": "user"
     },
     {
-      "id": 2,
+      "id": "2",
       "firstName": "sasan",
       "email": "sasan19@gmail.com",
       "gender": "مرد",
-      "password": "sasan5678",
+      "password": "s1234567",
       "role": "user"
     }
   ]
