@@ -9,7 +9,6 @@ signupForm.addEventListener("submit", async function (e) {
   const gender = document.querySelector('input[name="gender"]:checked')?.value;
 
   const user = { firstName, email, password, gender };
-  console.log(user);
 
   // شرط گذاشتیم که پسورد کمتر از 6 نباشه و با حروف شروع شود
 
@@ -18,6 +17,7 @@ signupForm.addEventListener("submit", async function (e) {
     alert(
       "رمز عبور باید حداقل ۶ کاراکتر داشته باشد و با یک حرف انگلیسی شروع شود.",
     );
+    return;
   }
 
   try {
@@ -30,8 +30,8 @@ signupForm.addEventListener("submit", async function (e) {
     });
 
     if(res.ok){
+       localStorage.setItem("user", JSON.stringify(user));
       alert("ثبت نام انجام شد")
-
         window.location.href="profiler.html"
 
     }
