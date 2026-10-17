@@ -1,8 +1,7 @@
 
 /* Form */
 form {
-  width: 100%;
-  max-width: 420px;
+  width: 450px;
   padding: 35px;
   background: #ffffff;
   border-radius: 16px;
@@ -11,8 +10,6 @@ form {
 
 /* Form Group */
 .form-group {
-  display: flex;
-  flex-direction: column;
   gap: 8px;
   margin-bottom: 20px;
 }
@@ -88,6 +85,7 @@ form {
 /* Mobile */
 @media (max-width: 480px) {
   form {
+    
     margin: 20px;
     padding: 25px;
   }
