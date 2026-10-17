@@ -47,3 +47,11 @@ loginForm.addEventListener("submit", async (e) => {
     console.log(error);
   }
 });
+
+// برسی لاگین بودن کاربر
+window.addEventListener('load' , function(){
+  let user= localStorage.getItem('user');
+  if(user){
+    window.location.href="/profiler.html"
+  }
+});
