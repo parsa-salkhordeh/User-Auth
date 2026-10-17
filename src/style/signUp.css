@@ -1,7 +1,9 @@
 #signupForm {
   max-width: 350px;
-  margin: 30px auto;
-  padding: 20px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color:#ffffff;
+ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 #signupForm h1 {
@@ -21,6 +23,7 @@
 .inputGroup input {
   width: 100%;
   padding: 8px;
+  font-size: large;
   border-radius: 6px;
   padding: 8px;
   border: solid gray 1px;
