@@ -21,33 +21,26 @@ signupForm.addEventListener("submit", async function (e) {
   }
 
   try {
-    const res = await fetch('http://localhost:3000/users' , {
-      method:"POST" , 
+    const res = await fetch("http://localhost:3000/users", {
+      method: "POST",
       body: JSON.stringify(user),
-      headers:{
-        "Content-Type": "application/json"
-      }
+      headers: {
+        "Content-Type": "application/json",
+      },
     });
 
-    if(res.ok){
-       localStorage.setItem("user", JSON.stringify(user));
-      alert("ثبت نام انجام شد")
-        window.location.href="profiler.html"
-
+    if (res.ok) {
+      localStorage.setItem("user", JSON.stringify(user));
+      window.location.href = "profiler.html";
     }
-
-
-  } catch (error) {
-    
-  }
+  } catch (error) {alert("مشکلی پیش آمده")}
 });
-
 
 // برسی لاگین بودن کاربر
 
-window.addEventListener('load' , function(){
-  let user= localStorage.getItem('user');
-  if(user){
-    window.location.href="/profiler.html"
+window.addEventListener("load", function () {
+  let user = localStorage.getItem("user");
+  if (user) {
+    window.location.href = "/profiler.html";
   }
 });
